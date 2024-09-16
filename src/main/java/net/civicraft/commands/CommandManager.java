@@ -4,14 +4,10 @@ import net.civicraft.commands.actions.Sit;
 import net.civicraft.commands.base.*;
 import net.civicraft.commands.company.CompanyCommand;
 import net.civicraft.commands.discord.Discord;
-import net.civicraft.commands.gym.WorkoutCommand;
 import net.civicraft.commands.music.Loop;
 import net.civicraft.commands.music.Music;
-import net.civicraft.commands.music.MusicInv;
 import net.minestom.server.MinecraftServer;
 import net.minestom.server.command.builder.Command;
-
-import java.util.Arrays;
 import java.util.List;
 
 /*
@@ -21,7 +17,6 @@ This is where I just put all the commands so that I don't flood the Main class.
  */
 public class CommandManager {
     private static final List<Command> COMMANDS = List.of(
-            new WorkoutCommand(),
             new CompanyCommand(),
             new Broadcast(),
             new Ext(),
