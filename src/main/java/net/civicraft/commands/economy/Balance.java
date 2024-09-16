@@ -1,8 +1,11 @@
 package net.civicraft.commands.economy;
 
+import net.civicraft.commands.company.CompanyMsg;
+import net.minestom.server.command.CommandSender;
 import net.minestom.server.command.builder.Command;
 import net.minestom.server.command.builder.arguments.ArgumentType;
 import net.minestom.server.entity.Player;
+import net.minestom.server.utils.entity.EntityFinder;
 
 public class Balance extends Command {
     public Balance() {
@@ -14,6 +17,19 @@ public class Balance extends Command {
             }
         });
 
-        var targetPlayer = ArgumentType.Entity("target").onlyPlayers(true);
+        var target = ArgumentType.Entity("target").onlyPlayers(true);
+
+        addSyntax((sender, context) -> {
+            if (sender instanceof Player player) {
+                EntityFinder finder = context.get(target);
+                Player targetPlayer = finder.findFirstPlayer(player);
+
+                if (targetPlayer != null) {
+                    player.sendMessage(targetPlayer.getDisplayName() + "'s balance: $<balance>");
+                } else {
+                    player.sendMessage("Invalid target");
+                }
+            }
+        }, target);
     }
 }

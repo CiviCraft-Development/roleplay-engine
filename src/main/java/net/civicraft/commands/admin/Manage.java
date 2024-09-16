@@ -1,4 +1,12 @@
 package net.civicraft.commands.admin;
 
-public class Manage {
+import net.minestom.server.command.builder.Command;
+
+public class Manage extends Command {
+    public Manage() {
+        super("manage");
+        setDefaultExecutor((sender, context) -> {
+
+        });
+    }
 }
