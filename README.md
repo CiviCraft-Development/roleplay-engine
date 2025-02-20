@@ -1,6 +1,8 @@
 # CiviCraft Roleplay Engine - Minecraft Roleplay Server Software
 
-CiviCraft Roleplay Engine is an active work-in-progress project designed for creating immersive roleplay experiences in Minecraft using Minestom. This software offers a customizable city environment where players can dive into roleplaying without the constraints of survival mechanics or vanilla gameplay mechanics. The focus is on creative storytelling and character development within a detailed urban setting.
+**Note:** CCRE is on hold. We're working on other projects, but will be back to developing this soon. Winter 2025 is the expected release date for 1.0!
+
+CiviCraft Roleplay Engine is an inactive work-in-progress project designed for creating immersive roleplay experiences in Minecraft using Minestom. This software offers a customizable city environment where players can dive into roleplaying without the constraints of survival mechanics or vanilla gameplay mechanics. The focus is on creative storytelling and character development within a detailed urban setting.
 
 ## Key Features:
 - **Immersive Roleplay Experience**: Players are instantly immersed in a dynamic roleplay environment where they can fully engage in character-driven stories and interactions without the distraction of survival mechanics.
